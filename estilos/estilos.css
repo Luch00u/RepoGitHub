@@ -93,6 +93,7 @@ li {
     border: 1px ridge black;
     margin-top: 25px;
   }
+  
   .video {
     grid-area: video;
     text-align: center;
@@ -169,6 +170,9 @@ li {
     position: relative;
     left: 650px;
   }
+  .logueo:hover{
+    transform: scale(1.2,1.1);
+  }
   .navegador {
     grid-area: navegador;
     height: 150px;
@@ -225,6 +229,9 @@ li {
     border-radius: 20px;
 
   }
+  .informacion div:hover{
+    transform: translate(5px,10px);
+   }
   .video {
     grid-area: video;
     display: flex;
