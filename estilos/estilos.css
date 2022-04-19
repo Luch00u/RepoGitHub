@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .iconoWsp img {
+    display: none;
+  }
+  body {
+    background-color: rgb(156, 142, 88);
+    display: grid;
+    grid-template-areas:
+      "cabecera cabecera "
+      "cuerpo cuerpo"
+      "pie pie";
+  }
+  /* header */
+  .cabecera {
+    position: relative;
+    grid-area: cabecera;
+    display: grid;
+    grid-template-areas:
+      "logo   logueo"
+      "titulo titulo"
+      "navegador navegador";
+  }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+  }
+  .logo {
+    grid-area: logo;
+    width: 50%;
+    display: inline-block;
+  }
+  .navegador {
+    margin-top: 20px;
+    grid-area: navegador;
+    background-color: rgb(80, 76, 76);
+    height: 50px;
+    color: white;
+  }
+  .navegador .listas {
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .listas li {
+    margin: 20px;
+  }
+  .logueo {
+    grid-area: logueo;
+    width: 15%;
+    display: inline-block;
+    position: relative;
+    left: 60%;
+  }
+  /*---------------*/
+  .cuerpo {
+    grid-area: cuerpo;
+  }
+  .pie {
+    grid-area: pie;
+    background-color: grey;
+  }
+  /*--------------------------------------------*/
+  /*BODY*/
+  .noticias {
+    display: grid;
+    grid-template-areas:
+      "informacion informacion"
+      "video video";
+  }
+  .informacion {
+    grid-area: informacion;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .informacion div {
+    border: 1px ridge black;
+    margin-top: 25px;
+  }
+  .video {
+    grid-area: video;
+    text-align: center;
+    height: 40rem;
+  }
+  .video iframe {
+    width: 95%;
+    height: 40%;
+  }
+
+  /*PAGINA CONTACTO*/
+  .bodyContacto {
+    display: grid;
+    grid-template-areas:
+      "cabecera cabecera"
+      "cuerpoContacto cuerpoContacto"
+      "pieContacto pieContacto";
+  }
+  .cuerpoContacto {
+    border: 1px solid black;
+    grid-area: cuerpoContacto;
+    height: 70vh;
+  }
+  .pieContacto {
+    grid-area: pieContacto;
+    background-color: grey;
+    height: 10vh;
+  }
+  .formulario {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*------------MEDIA EN MODO DESKTOP----------*/
+@media screen and (min-width: 1024px) {
+  .iconoWsp img {
+    display: none;
+  }
+  body {
+    background-color: rgb(156, 142, 88);
+    display: grid;
+    grid-template-areas:
+      "cabecera cabecera cabecera "
+      "cuerpo cuerpo cuerpo"
+      "pie pie pie";
+  }
+  /*HEADER*/
+  .cabecera {
+    grid-area: cabecera;
+    display: grid;
+    grid-template-areas:
+      "logo titulo logueo"
+      "navegador navegador navegador";
+    position: relative;
+  }
+  .logo {
+    grid-area: logo;
+    width: 15%;
+  }
+  .titulo {
+    grid-area: titulo;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 120px;
+    position: relative;
+    right: 400px;
+    top: 50px;
+  }
+  .logueo {
+    grid-area: logueo;
+    width: 15%;
+    border-radius: 80%;
+    position: relative;
+    left: 650px;
+  }
+  .navegador {
+    grid-area: navegador;
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(114, 72, 42);
+  }
+  .navegador .listas {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navegador .listas li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: rgb(70, 68, 71);
+  }
+  .listas li:hover {
+    opacity: 50%;
+  }
+  /*-------------------------------------------*/
+  /*MAIN*/
+  .cuerpo {
+    grid-area: cuerpo;
+  }
+  .noticias {
+    display: grid;
+    grid-template-areas:
+      "informacion informacion informacion"
+      "video video video";
+  }
+  .cuerpo h2 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .informacion {
+    margin: 20px;
+    grid-area: informacion;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 40px;
+    content: normal;
+  }
+  .informacion div {
+    border: 1px solid black;
+    border-radius: 20px;
+
+  }
+  .video {
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .video iframe {
+    width: 70%;
+    height: 70vh;
+  }
+  /*--------------------------------------*/
+  .pie {
+    grid-area: pie;
+    background-color: gray;
+    height: 150px;
+}
+.pie p{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+  /*CONTACTO*/
+.bodyContacto{
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera"
+    "cuerpoContacto cuerpoContacto cuerpoContacto"
+    "pieContacto pieContacto pieContacto";
+}
+.bodyContacto .cabecera{
+width: 100vw;
+}
+.cuerpoContacto{
+    grid-area: cuerpoContacto;
+    /* display: flex;
+    flex-direction: column; */
+}
+.cuerpoContacto h2{
+    text-align: center;
+    font-size: 50px;
+}
+.cuerpoContacto fieldset{
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+}
+.cuerpoContacto .formulario{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 100%;
+    height: 80%;
+}
+.pieContacto{
+    grid-area: piecontacto;
+    height: 500px;
+    background-color: gray;
+}
+}

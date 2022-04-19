@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body class="bodyContacto">
+    <header class="cabecera">
+        <img class="logo" src="/images/logo.png" alt="logo">
+        <h1 class="titulo">Muebleria: Los amigos</h1>
+        <a href="/pages/login.html"><img class="logueo" src="/images/icono logueo.jpg" alt="logueo"></a>
+        <!-- Barra de navegacion -->
+        <nav class="navegador">
+            <ul class="listas">
+
+                <li><a href="/index.html">Inicio</a></li>
+                |
+                <li><a href="/pages/catálogo.html">Catálogo</a></li>
+                |
+                <li><a href="/pages/contacto.html">Contácto</a></li>
+                |
+                <li><a href="/pages/preguntasFrecuentes.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main-->
+    <main class="cuerpoContacto">
+        <div class="iconoWsp"><img src="/images/icono wsp.png" alt="whatsup"></div>
+        <h2>Ingresa tu consulta</h2>
+        <fieldset>
+            <form class="formulario" action="">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" type="text" id="nombre">
+                <label for="apellido">Apellido</label>
+                <input name="apellido" type="text" id="apellido">
+                <label for="email">E-mail</label>
+                <input name="email" type="email" id="email" required>
+                <label for="consulta">Ingresar consulta</label>
+                <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar">
+
+            </form>
+        </fieldset>
+    </main>
+    <footer class="pieContacto">
+        <p style="text-align: center;">Copyright todos los derechos reservados</p>
+    </footer >
+</body>
+
+</html>
